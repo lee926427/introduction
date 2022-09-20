@@ -1,7 +1,12 @@
-import { useEffect } from 'react';
+import { useEffect, ReactNode } from 'react';
 import { SideBar, TimeLine } from './components';
 import { Card, Flowbite } from 'flowbite-react';
-import { TimeLineItemProps } from './typing';
+
+type TimeLineItemProps = {
+  date: string;
+  title: string;
+  body: () => ReactNode;
+};
 
 function App() {
   const portfolios: TimeLineItemProps[] = [

@@ -1,6 +1,12 @@
+import { ReactNode } from 'react';
 import { Timeline } from 'flowbite-react';
 import { CalendarDaysIcon } from '@heroicons/react/24/solid';
-import { TimeLineItemProps } from '../../typing';
+
+type TimeLineItemProps = {
+  date: string;
+  title: string;
+  body: () => ReactNode;
+};
 
 type TimeLineProps = {
   items: TimeLineItemProps[];
