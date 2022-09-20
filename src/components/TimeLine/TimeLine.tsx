@@ -1,5 +1,6 @@
-import { Timeline, Button } from 'flowbite-react';
-import { CalendarDaysIcon, ArrowSmallRightIcon } from '@heroicons/react/24/solid';
+import { Timeline } from 'flowbite-react';
+import { CalendarDaysIcon } from '@heroicons/react/24/solid';
+import { TimeLineItemProps } from '../../typing';
 
 type TimeLineProps = {
   items: TimeLineItemProps[];
